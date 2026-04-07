@@ -17,6 +17,15 @@ build/
 dist/
 frontend/build/
 
+# Media and Uploads
+backend/uploads/
+*.mp4
+*.wav
+*.mpeg
+*.mov
+*.avi
+*.mp3
+
 # Debug logs
 npm-debug.log*
 yarn-debug.log*

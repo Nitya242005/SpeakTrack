@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --primary: #7C3AED;
+  --primary-glow: rgba(124, 58, 237, 0.25);
+  --primary-hover: #6D28D9;
+  --secondary: #10b981;
+  --background: #0F0F1A;
+  --bg-gradient: linear-gradient(135deg, #0F0F1A 0%, #171725 100%);
+  --surface: #181825;
+  --heading: #F5F3FF;
+  --text-main: #D1D5DB;
+  --text-muted: #9CA3AF;
+  --border: rgba(255, 255, 255, 0.08);
+  --glass-bg: rgba(24, 24, 37, 0.7);
+  --glass-border: rgba(124, 58, 237, 0.2);
+  --shadow-premium: 0 20px 50px -12px rgba(0, 0, 0, 0.5);
+  --radius-lg: 16px;
+  --radius-md: 12px;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--background);
+  background-image: var(--bg-gradient);
+  color: var(--text-main);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-premium);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.motto-text {
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+  font-size: 0.8rem;
+  display: block;
+}

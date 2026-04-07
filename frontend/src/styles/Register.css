@@ -1,0 +1,5 @@
+/* Register styles are now handled by global index.css and shared classes with Login.css */
+/* Minimal overrides if needed */
+.register-container {
+  /* Reuse login-container style */
+}
